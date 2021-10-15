@@ -58,7 +58,10 @@ export default function HeaderSection() {
         </h2>
         <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
           {supportLinks.map((link) => (
-            <div key={link.name} className="flex flex-col rounded-2xl shadow-xl">
+            <div
+              key={link.name}
+              className="flex flex-col bg-white dark:bg-gray-900 rounded-2xl shadow-xl"
+            >
               <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                 <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
                   <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
