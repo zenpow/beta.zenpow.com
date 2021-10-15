@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 const navigation = {
   solutions: [
@@ -100,9 +99,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <Image
-              width={40}
-              height={40}
+            <img
               className="h-10"
               src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
               alt="Company name"
