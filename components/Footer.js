@@ -93,7 +93,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -130,7 +130,10 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-500 hover:text-gray-900 dark:text-gray-300"
+                      >
                         {item.name}
                       </a>
                     </li>
@@ -144,7 +147,10 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-500 hover:text-gray-900 dark:text-gray-300"
+                      >
                         {item.name}
                       </a>
                     </li>
@@ -160,7 +166,10 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-500 hover:text-gray-900 dark:text-gray-300"
+                      >
                         {item.name}
                       </a>
                     </li>
@@ -174,7 +183,10 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <a
+                        href={item.href}
+                        className="text-base text-gray-500 hover:text-gray-900 dark:text-gray-300"
+                      >
                         {item.name}
                       </a>
                     </li>
