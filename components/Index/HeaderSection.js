@@ -26,7 +26,7 @@ const supportLinks = [
 
 export default function HeaderSection() {
   return (
-    <div className="bg-white">
+    <div>
       {/* Header */}
       <div className="relative pb-32 bg-gray-800">
         <div className="absolute inset-0">
@@ -58,15 +58,15 @@ export default function HeaderSection() {
         </h2>
         <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
           {supportLinks.map((link) => (
-            <div key={link.name} className="flex flex-col bg-white rounded-2xl shadow-xl">
+            <div key={link.name} className="flex flex-col rounded-2xl shadow-xl">
               <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                 <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
                   <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
+                <h3 className="text-xl dark:text-white font-medium text-gray-900">{link.name}</h3>
                 <p className="mt-4 text-base text-gray-500">{link.description}</p>
               </div>
-              <div className="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
+              <div className="p-6 bg-gray-50 dark:bg-black rounded-bl-2xl rounded-br-2xl md:px-8">
                 <a
                   href={link.href}
                   className="text-base font-medium text-indigo-700 hover:text-indigo-600"
