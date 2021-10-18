@@ -1,8 +1,4 @@
-import Image from 'next/image'
-
-const myLoader = ({ src }) => {
-  return `${src}`
-}
+import Image from '@/components/Image'
 
 export default function LogoClouds() {
   return (
@@ -16,7 +12,6 @@ export default function LogoClouds() {
             <Image
               width="150"
               height="70"
-              loader={myLoader}
               className="max-h-12"
               src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
               alt="Workcation"
@@ -24,7 +19,6 @@ export default function LogoClouds() {
           </div>
           <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 dark:bg-gray-900">
             <Image
-              loader={myLoader}
               width="150"
               height="70"
               className="max-h-12"
@@ -36,7 +30,6 @@ export default function LogoClouds() {
             <Image
               width="150"
               height="70"
-              loader={myLoader}
               className="max-h-12"
               src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
               alt="Tuple"
@@ -46,7 +39,6 @@ export default function LogoClouds() {
             <Image
               width="150"
               height="70"
-              loader={myLoader}
               className="max-h-12"
               src="https://tailwindui.com/img/logos/laravel-logo-gray-400.svg"
               alt="Laravel"
@@ -56,7 +48,6 @@ export default function LogoClouds() {
             <Image
               width="150"
               height="70"
-              loader={myLoader}
               className="max-h-12"
               src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
               alt="StaticKit"
@@ -66,7 +57,6 @@ export default function LogoClouds() {
             <Image
               width="150"
               height="70"
-              loader={myLoader}
               className="max-h-12"
               src="https://tailwindui.com/img/logos/statamic-logo-gray-400.svg"
               alt="Statamic"

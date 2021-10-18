@@ -1,8 +1,4 @@
-import Image from 'next/image'
-
-const myLoader = ({ src }) => {
-  return `${src}`
-}
+import Image from '@/components/Image'
 
 export default function Testimonials() {
   return (
@@ -13,7 +9,6 @@ export default function Testimonials() {
             <Image
               width="100"
               height="50"
-              loader={myLoader}
               className="h-12"
               src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
               alt="Tuple"
@@ -40,7 +35,6 @@ export default function Testimonials() {
                   <Image
                     width="50"
                     height="50"
-                    loader={myLoader}
                     className="h-12 w-12 rounded-full"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
@@ -59,7 +53,6 @@ export default function Testimonials() {
             <Image
               width="100"
               height="50"
-              loader={myLoader}
               className="h-12"
               src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg"
               alt="Workcation"
@@ -86,7 +79,6 @@ export default function Testimonials() {
                   <Image
                     width="50"
                     height="50"
-                    loader={myLoader}
                     className="h-12 w-12 rounded-full"
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""

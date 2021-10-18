@@ -1,9 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
-
-const myLoader = ({ src }) => {
-  return `${src}`
-}
+import Image from '@/components/Image'
 
 const navigation = {
   solutions: [
@@ -105,7 +101,6 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Image
-              loader={myLoader}
               src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
               width={40}
               height={40}
