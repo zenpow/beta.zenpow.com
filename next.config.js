@@ -20,7 +20,7 @@ module.exports = withBundleAnalyzer({
         {
           loader: 'file-loader',
           options: {
-            publicPath: '/next',
+            publicPath: '/_next',
             name: 'static/media/[name].[hash].[ext]',
           },
         },
