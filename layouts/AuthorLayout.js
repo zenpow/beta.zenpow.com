@@ -2,8 +2,8 @@ import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+const myLoader = ({ src }) => {
+  return `${src}`
 }
 
 export default function AuthorLayout({ children, frontMatter }) {

@@ -1,7 +1,8 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+const myLoader = ({ src }) => {
+  return `${src}`
 }
 
 const navigation = {
@@ -105,10 +106,10 @@ export default function Footer() {
           <div className="space-y-8 xl:col-span-1">
             <Image
               loader={myLoader}
+              src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
               width={40}
               height={40}
               className="h-10"
-              src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
               alt="Company name"
             />
             <p className="text-gray-500 text-base">

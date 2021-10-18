@@ -1,8 +1,8 @@
 import Image from './Image'
 import Link from './Link'
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+const myLoader = ({ src }) => {
+  return `${src}`
 }
 
 const Card = ({ title, description, imgSrc, href }) => (

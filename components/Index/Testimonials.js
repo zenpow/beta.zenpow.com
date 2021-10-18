@@ -1,10 +1,19 @@
+import Image from 'next/image'
+
+const myLoader = ({ src }) => {
+  return `${src}`
+}
+
 export default function Testimonials() {
   return (
     <section className="bg-indigo-800 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
         <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-indigo-900 lg:pr-16">
           <div className="md:flex-shrink-0">
-            <img
+            <Image
+              width="100"
+              height="50"
+              loader={myLoader}
               className="h-12"
               src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
               alt="Tuple"
@@ -28,7 +37,10 @@ export default function Testimonials() {
             <footer className="mt-8">
               <div className="flex items-start">
                 <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                  <img
+                  <Image
+                    width="50"
+                    height="50"
+                    loader={myLoader}
                     className="h-12 w-12 rounded-full"
                     src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
@@ -44,7 +56,10 @@ export default function Testimonials() {
         </div>
         <div className="py-12 px-4 border-t-2 border-indigo-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
           <div className="md:flex-shrink-0">
-            <img
+            <Image
+              width="100"
+              height="50"
+              loader={myLoader}
               className="h-12"
               src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg"
               alt="Workcation"
@@ -68,7 +83,10 @@ export default function Testimonials() {
             <footer className="mt-8">
               <div className="flex items-start">
                 <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                  <img
+                  <Image
+                    width="50"
+                    height="50"
+                    loader={myLoader}
                     className="h-12 w-12 rounded-full"
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
