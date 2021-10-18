@@ -3,7 +3,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
-  basePath: '/beta.zenpow.com',
   images: {
     domains: ['tailwindui.com'],
     loader: 'custom',
