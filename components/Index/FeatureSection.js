@@ -7,7 +7,7 @@ import {
 
 const features = [
   {
-    name: 'Competitive exchange rates',
+    name: 'Shopify app dev',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: GlobeAltIcon,
